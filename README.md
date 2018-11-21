@@ -1,2 +1,2 @@
 # iReporter
-Platform for citizens to report corruption and intervention concerns
+Andela Project: Platform for citizens to report corruption and intervention concerns
