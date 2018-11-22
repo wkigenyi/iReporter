@@ -1,0 +1,39 @@
+body{
+  font-family: sans-serif;
+  background-color: rgba(241, 241, 241, 0.5);
+  font-size: 13px;
+}
+#login,#register{
+
+  width: 320px;
+  margin: auto;
+
+}
+.loginform{
+  padding: 26px 24px 26px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  margin-left: 0;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.loginform input{
+  width: 100%;
+}
+.loginform input[type="text"],
+.loginform input[type="password"],
+.loginform input[type="email"],
+.loginform input[type="tel"]{
+  background-color: #fbfbfb;
+  padding: 3px;
+  margin: 2px 6px 16px 0;
+}
+.button{
+  display: inline-block;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  border-color: #006799;
+  height: 30px;
+}
