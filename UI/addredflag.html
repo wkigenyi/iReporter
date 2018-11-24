@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/style.css"/>
+    <title>iReporter | Admin Area</title>
+  </head>
+  <body>
+    <div class="header"><h2>iReporter</h2></div>
+       <div id="admin-menu-main">
+        <nav>
+            <ul id="admin-nav">
+                <li><a href="">My Red Flags</a></li>
+                <li><a href="">New Red Flag</a></li>
+                <li><a href="">My Concerns</a></li>
+                <li><a href="">New Concern</a></li>
+                <li><a href="">All Red Flags</a></li>
+                <li><a href=""> All Concerns</a></li>
+                <li><a href="">Profile</a></li>
+            </ul>
+        </nav>
+        
+      </div>
+      <div id="main-content">
+          <div id="content">
+              <h3>Add A Red Flag</h3>
+              <form name="redflagform" class="contentform" action="" method="post">
+                <p>
+                  <label for="username">Title:<br/><input type="text" name="title" value="" size="20"/>
+                  </label>
+                </p>
+                <p>
+                  <label for="description">Description:<br/><textarea name="details" value="" size="20"></textarea>
+                  </label>
+                </p>
+                <p>
+                        <label for="longitude">Longitude:<br/><input type="text" name="longitude" value="" size="20">
+                        </label>
+                      </p>
+                <p>
+                        <p>
+                                <label for="latitude">Latitude:<br/><input type="text" name="latitude" value="" size="20"/>
+                                </label>
+                              </p>
+                        <p>    
+                        <label for="image">Add An Image:<br/><input type="file"></label>
+                        </label>
+                      </p>
+                <p>
+                        <p>
+                                <label for="image">Add A Video<br/><input type="file"></label>
+                                </label>
+                              </p>
+                        <p>    
+                  <input type="submit" name="" class="button" value="Add Red Flag"/>
+                </p>
+              </form>
+            </div>
+      </div>
+     
+      <div id="user-profile">
+        <header>User Profile</header>
+        <div class="avatar">
+          <p>avatar</p>
+        </div>
+        <p>Name: KIGENYI WILFRED</p>
+        <p>Resolved Red Flags (6)</p>
+        <p>Resolved Interventions (2)</p>
+        <p>Unresolved Red Flags (1)</p>
+        <p>Unresolved Interventions (4)</p>
+        <p>Rejected Red Flags (1)</p>
+        <p>Rejected Interventions (4)</p>
+
+          
+      </div>
+      <footer>
+            <script>
+                    
+                    function getLocation() {
+                        if (navigator.geolocation) {
+                            navigator.geolocation.getCurrentPosition(showPosition);
+                        } else {
+                            
+                        }
+                    }
+                    function showPosition(position) {
+                        form.latitude = position.coords.latitude;
+                        form.longitude =  position.coords.longitude;
+                    }
+                    </script> 
+      </footer>
+    
+  </body>
+</html>
